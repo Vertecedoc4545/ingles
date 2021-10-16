@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="pr3.html"><strong aria-hidden="true">1.</strong> Proyecto:alimentacion</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="pr3.html"><strong aria-hidden="true">1.</strong> Proyecto:alimentacion</a></li><li class="chapter-item expanded "><a href="Pages.html"><strong aria-hidden="true">2.</strong> Progecto traduccion</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -161,6 +161,23 @@
 <p>I haven’t been eaten tacos, because we don't go out as much</p>
 <p>I have been eaten chines food, because we almost always order it from a restaurant </p>
 <h3 id="carlos-eduardo-palma-licea"><a class="header" href="#carlos-eduardo-palma-licea">Carlos Eduardo Palma Licea</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="parámetros-de-control-de-aceleracióndesaceleran"><a class="header" href="#parámetros-de-control-de-aceleracióndesaceleran">Parámetros de control de aceleración/desaceleran</a></h1>
+<table><thead><tr><th>#7</th><th>#6</th><th>#5</th><th>#4</th><th>#3</th><th>#2</th><th>#1</th><th>#0</th></tr></thead><tbody>
+<tr><td></td><td></td><td>NCI</td><td>RTO</td><td></td><td>OVB</td><td></td><td></td></tr>
+<tr><td></td><td></td><td>NCI</td><td>RTO</td><td></td><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>[Tipo de datos] Bit</p>
+<p>OVB:  Solapamiento de bloque de la alimentación de corte
+0: Los bloques no están solapados en la alimentación de corte
+1: Los bloques están solapados en la alimentación de corte
+El solapamiento de bloques saca los pulsos restantes en el final de la distribucion de pulsos con la distribucion de pulsos del bloque siguiente.
+Eliminando los cambios en las tazas de alimentacion entre bloques.</p>
+<p>El solapamiento de bloques esta habilitado cuando contienen G01,G02 o G03 y esta consecutivamente especificado en el modo G64. Sin embargo si los bloques de minutos estan especificados consecutivamente, el solapamiento podria no ser aplicado.
+Los pulsos siguientes en el bloque F2 son añadidos a los pulsos restantes en el final de la distribucion en el bloque F1</p>
+<blockquote>
+<p>$$ (Numero\space de\space pulsos\spoce a\space ser\space añadidos) = F2 \times \frac{(Numero\space de\space pulsos\space requeridos\space en\space el\space final\space del\space bloque\space F1)}{F1}$$</p>
+</blockquote>
+<p>​</p>
 
                     </main>
 
